@@ -82,7 +82,3 @@ VITE_APP_NAME=URL Shortener
 ### Backend (Railway/Heroku)
 1. Set environment variables
 2. Deploy BACKEND folder
-
-## License
-
-MIT

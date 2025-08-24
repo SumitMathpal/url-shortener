@@ -28,12 +28,10 @@ const UrlForm = () => {
     setLoading(true);
     setCopied(false);
     try {
-      const response = await axios.post(
-        `${import.meta.env.VITE_API_URL || "http://localhost:5000"}/api/create`,
-        {
-          url,
-        }
-      );
+      const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5000";
+      const response = await axios.post(`${apiUrl}/api/create`, {
+        url,
+      });
 
       console.log("Short URL created:", response.data);
       setShortUrl(response.data);
