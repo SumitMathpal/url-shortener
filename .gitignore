@@ -5,8 +5,11 @@ FRONTEND/node_modules/
 
 # Environment variables
 .env
+.env.example
 BACKEND/.env
+BACKEND/.env.example
 FRONTEND/.env
+FRONTEND/.env.example
 
 # Build outputs
 FRONTEND/dist/
