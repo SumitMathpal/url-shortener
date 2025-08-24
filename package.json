@@ -1,0 +1,21 @@
+{
+  "name": "urlshortner",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd BACKEND && npm start",
+    "frontend": "cd FRONTEND && npm run dev",
+    "build": "cd FRONTEND && npm run build",
+    "start": "cd BACKEND && npm start",
+    "install-all": "npm install && cd BACKEND && npm install && cd ../FRONTEND && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
